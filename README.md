@@ -1,6 +1,7 @@
 # cpp_template
 
 CMake/Conan-based template for C++ projects.
+Tailored for personal usage.
 
 ## Usage
 
@@ -10,15 +11,11 @@ Quick start:
 
 ```bash
 mkdir build && cd build
-conan install ..
-cmake ..
+conan install .. --build=missing -o testing=True
+cmake -D TESTING=ON ..
 cmake --build .
 ./bin/cpp_template
 ```
-
-## TODOs
-
-- separate library and executable logic in src to simplify testing
 
 ## Tested configurations
 
